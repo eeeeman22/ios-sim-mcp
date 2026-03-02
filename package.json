@@ -1,0 +1,20 @@
+{
+  "name": "ios-sim-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for driving the iOS simulator in agentic feedback loops",
+  "type": "module",
+  "bin": {
+    "ios-sim-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "dev": "bun run src/index.ts",
+    "prepare": "bun run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}
