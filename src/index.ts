@@ -316,7 +316,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
       case "launch_app": {
         const udid = getBootedSimulatorUDID();
-        const launchArgs = (args!.launch_args as string[] | undefined) ?? [];
+        const launchArgs = (args!.args as string[] | undefined) ?? [];
         const output = simctl("launch", udid, args!.bundle_id as string, ...launchArgs);
         return { content: [{ type: "text", text: output }] };
       }

@@ -1,4 +1,4 @@
-# ios-simulator-mcp
+# ios-sim-mcp
 
 > **v0.1** — functional but early. See [Limitations](#limitations) below.
 
@@ -15,16 +15,16 @@ bun run build
 
 ## Add to Claude Code
 ```bash
-claude mcp add ios-simulator -- node /path/to/ios-simulator-mcp/dist/index.js
+claude mcp add ios-sim-mcp -- node /path/to/ios-sim-mcp/dist/index.js
 ```
 
 Or add to `~/.claude/mcp.json`:
 ```json
 {
   "mcpServers": {
-    "ios-simulator": {
+    "ios-sim-mcp": {
       "command": "node",
-      "args": ["/absolute/path/to/ios-simulator-mcp/dist/index.js"]
+      "args": ["/absolute/path/to/ios-sim-mcp/dist/index.js"]
     }
   }
 }
